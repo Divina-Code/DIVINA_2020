@@ -7,7 +7,29 @@ HOMEWORK
 
 
 """
+from random import randint as ri
+from time import sleep
 
 
-computer_number = 35
+computer_number = ri(0, 100)
 
+isGuessed = False
+lives = 10
+
+while not isGuessed and lives>0:
+    answer = int(input("Назови число от 1 до 100: "))
+    # lives = lives - 1
+    lives -= 1
+
+
+    if answer == computer_number:
+        print("you win")
+        isGuessed = True
+    elif answer > computer_number:
+        print("Too big number")
+    else:
+        print("Too small")
+
+    sleep(1)
+
+print("game over")
