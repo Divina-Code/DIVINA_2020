@@ -9,6 +9,9 @@
 
 player1 = #РАНДОМНОЕ ЧИСЛО ОТ " до 11
 
+
+
+
 game = True
 
 while game:

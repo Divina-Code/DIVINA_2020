@@ -7,11 +7,11 @@ HOMEWORK
 
 
 """
-from random import randint as ri
+from random import randint
 from time import sleep
 
 
-computer_number = ri(0, 100)
+computer_number = randint(0, 100)
 
 isGuessed = False
 lives = 10
