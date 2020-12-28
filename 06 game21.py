@@ -6,19 +6,39 @@
 Если набрал меньше 21, то нужно сравнить с остальными
 
 """
+import telebot
 
-player1 = #РАНДОМНОЕ ЧИСЛО ОТ " до 11
+player1 = 18 #Счёт игрока (очки)
 
 
-inGame1 = True
-inGame1 = True
+inGame1 = True #Играт ли игрок1 или уже закончил
 
-game = True
 
-while game:
 
-    #Если первому игроку нужно предлагать карту
-         #Предложить карту
 
+while inGame1:
+
+    #ПРЕДЛАГАЕМ КАРТУ 1-МУ игроку
+    if inGame1:
+        take_card = input("Будешь брать карту? [ДА\НЕТ]")
+        if take_card == "ДА":
+            player1+=3
+            print("Теперь у тебя очков", player1)
+        elif take_card =="НЕТ":
+            inGame1 = False
+        else:
+            print("Я тебя не понял")
+
+    #Проверяем, не перебрал ли игрок карт
+    if player1>=21:
+        inGame1 = False
+
+print("Игра окончена")
+
+#ИЩЕМ ПОБЕДИТЕЛЯ
+if player1 <= 21:
+    print("Ты победил! Ура!")
+else:
+    print("Ты проиграл, увы")
 
 
