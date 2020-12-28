@@ -10,7 +10,8 @@
 player1 = #РАНДОМНОЕ ЧИСЛО ОТ " до 11
 
 
-
+inGame1 = True
+inGame1 = True
 
 game = True
 
