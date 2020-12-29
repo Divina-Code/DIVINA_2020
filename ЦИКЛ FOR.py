@@ -1,40 +1,50 @@
-myStudents = ["artem", "ilya", "ivan"]
-
-
-
-for student in myStudents:
-
-    index = myStudents.index(student)
-    myStudents[index] = student.title()
-
-    # print(student, " Happy New Year")
-print(myStudents)
-
-myStudents = ["artem", "ilya", "ivan", 'ivan']
-
-print("My best students is:", ", ".join(myStudents))
-
-for student in myStudents:
-
-    index = myStudents.index(student)
-    myStudents[index] = student.title()
-
-    # print(student, " Happy New Year")
-print(myStudents)
-
-# print(range(100))
-# print(*range(100))
+# myStudents = ["artem", "ilya", "ivan"]
 #
-# print(*range(55, 78))
-# print(*range(0, 1000, 29))
+#
+#
+# for student in myStudents:
+#
+#     index = myStudents.index(student)
+#     myStudents[index] = student.title()
+#
+#     # print(student, " Happy New Year")
+# print(myStudents)
+#
+# myStudents = ["artem", "ilya", "ivan", 'ivan']
+#
+# print("My best students is:", ", ".join(myStudents))
+#
+# for student in myStudents:
+#
+#     index = myStudents.index(student)
+#     myStudents[index] = student.title()
+#
+#     # print(student, " Happy New Year")
+# print(myStudents)
+#
+# # print(range(100))
+# # print(*range(100))
+# #
+# # print(*range(55, 78))
+# # print(*range(0, 1000, 29))
+#
+#
+# randomNumbers = [32, 84, 17, 66, 15, 89, 99]
+#
+# for a in range(len(randomNumbers)):
+#     if a >0 and randomNumbers[a] > randomNumbers[a-1]:
+#         print(randomNumbers[a])
+#
 
 
-randomNumbers = [32, 84, 17, 66, 15, 89, 99]
+nums = [1, 6, 7, 13]
 
-for a in range(len(randomNumbers)):
-    if a >0 and randomNumbers[a] > randomNumbers[a-1]:
-        print(randomNumbers[a])
-
-
+for abc in nums :
+    if abc%2 !=0:
+        print(abc)
 
 
+for bca in range(50):
+    # if bca%5 !=0:
+    #     print(bca)
+    print()

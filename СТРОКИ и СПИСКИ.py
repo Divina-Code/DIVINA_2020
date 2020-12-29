@@ -4,7 +4,7 @@
 shoppingList = input("Введи товары:\t")
 
 print(len(shoppingList))
-shoppingList = shoppingList.split(', ')
+shoppingList = shoppingList.split(' ')
 print(shoppingList)
 print(len(shoppingList))
 
