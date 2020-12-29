@@ -12,6 +12,6 @@ print(len(shoppingList))
 
 ###Как из списка элементов сделать строку
 myStudents = ["artem", "ilya", "ivan"]
-
+print(", ".join(myStudents))
 print("My best students is:", ", ".join(myStudents))
 
