@@ -48,3 +48,14 @@ while True:
         else: #Если было введено больше 2х значений
             print("попробуй ещё раз")
 
+    if answer == 'D':
+        login = input("Кого удалить? ")
+        if user_data.get(login) == None:
+            print("Такого пользователя нет, попробуй другой логин")
+
+        else:
+            user_data.pop(login)
+            print(f"Пользователь {login} удалён")
+
+    if answer == "A":
+        print(*sorted(user_data.keys()), sep='\n')
