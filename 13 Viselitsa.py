@@ -9,13 +9,11 @@
 
 """
 
-word  = 'АНТАРКТИДА'
+word = 'АНТАРКТИДА'
 
 letters = []
-for a in word: #Цикл повторится столько раз, сколько у нас букв
+for a in word:  # Цикл повторится столько раз, сколько у нас букв
     letters.append("_")
-
-
 
 print(letters)
 print(' '.join(letters))

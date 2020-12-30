@@ -20,4 +20,5 @@ print(myCats)
 print(myCats[5])  #Взять элемент с нужным индексом
 print(myCats[-7]) #Взять элемент с конца
 
-
+myCats+="Murzik"
+print(myCats)

@@ -1,4 +1,4 @@
-
+from random import choice
 
 # user_data = {}
 
@@ -58,4 +58,17 @@ while True:
             print(f"Пользователь {login} удалён")
 
     if answer == "A":
-        print(*sorted(user_data.keys()), sep='\n')
+        #print(*sorted(user_data.keys()), sep='\n')
+
+        for key in user_data:
+            print(key, user_data[key])
+
+    if answer == "P":
+        print(user_data)
+
+
+    if answer == "R":
+        all_keys = user_data.keys()  #Возьмём все ключи
+        list_keys = list(all_keys)   #Преобразуем в список
+        random_key = choice(list_keys) #вЫберем случайный ключ
+        print(random_key, user_data[random_key])
